@@ -33,7 +33,7 @@ function App() {
       formData.append('price', newShoe.price);
       formData.append('image', newShoe.image);
       
-      await axios.post('http://localhost:5000/api/shoes', formData, {
+      await axios.post('https://shoeapi-s7fv.onrender.com/api/shoes', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       fetchShoes(); // Refresh the shoe list
