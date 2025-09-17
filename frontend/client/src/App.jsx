@@ -16,7 +16,7 @@ function App() {
   // Handle GET request
   const fetchShoes = async () => {
     try {
-      const response = await axios.get(`https://shoeapi-gzvy.onrender.com/api/shoes?brandName=${brandName}`);
+      const response = await axios.get(`https://shoeapi-s7fv.onrender.com/api/shoes?brandName=${brandName}`);
       setShoes(response.data);
     } catch (error) {
       console.error('Error fetching shoes:', error);
